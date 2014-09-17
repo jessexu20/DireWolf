@@ -30,7 +30,7 @@ class JobApplicationsController < ApplicationController
     @user=current_user
     job=Job.find(session[:job_id])
 
-    @job_application = @user.job_application.build(job:job)
+    @job_application = @user.job_applications.build(job:job)
     @job_application.status="pending"
     respond_to do |format|
       if @job_application.save
@@ -77,4 +77,5 @@ class JobApplicationsController < ApplicationController
     def job_application_params
       params.require(:job_application).permit(:name, :email, :coverletter,:status)
     end
+  # before_action :authenticate_user!
 end

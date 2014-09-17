@@ -71,4 +71,5 @@ class JobsController < ApplicationController
     def job_params
       params.require(:job).permit(:name, :content, :field, :tag, :employer, :deadline)
     end
+  before_action :authenticate_user!
 end

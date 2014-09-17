@@ -2,8 +2,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :job_applications
 
-  resources :line_item1s
-
   resources :applies
 
   get 'job_pool/index'
