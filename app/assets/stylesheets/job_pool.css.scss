@@ -1,0 +1,31 @@
+/* START_HIGHLIGHT */
+.job_pool {
+  h1 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0.5em;
+    font:  bold 200% sans-serif;
+    color: lightsalmon;
+    border-bottom: 3px solid lightsalmon;
+  }
+
+  /* An entry in the store catalog */
+  .entry {
+    overflow: auto;
+    margin-top: 1em;
+    margin-left: 0px;
+    border-bottom: 1px dotted darksalmon;
+    min-height: 100px;
+
+
+    h3 {
+      font-size: 120%;
+      font-family: sans-serif;
+      margin-left: 0px;
+      margin-top: 0;
+      margin-bottom: 2px;
+      color: darksalmon;
+    }
+  }
+}
+/* END_HIGHLIGHT */

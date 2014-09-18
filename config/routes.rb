@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :employers,singular: 'employer'
-  devise_for :admins,singular: 'admin'
   devise_for :users
-  resources :jobapplications
+  resources :job_applications
 
-  get 'jobpool/index'
-  post 'jobapplications/new'
+  resources :applies
+
+  get 'job_pool/index'
+  post 'job_applications/new'
   resources :jobs
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -13,10 +13,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
+  root to: 'job_pool#index',as: 'job_pool'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  root to:'jobpool#index'
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<h2>Jobs You have applied</h2>
+<ul>
+  <% @apply.line_item1s.each do |item| %>
+      <li>
+        <%="Job Position: "%><%=item.job.name %><%=" Employer: "%><%= item.job.employer %>
+      </li>
+  <% end %>
+</ul>
+<%= link_to 'Back', job_pool_path %>

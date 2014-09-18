@@ -1,0 +1,16 @@
+
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Job Listing</h1>
+
+<% @jobs.each do |job| %>
+    <div class="entry">
+
+      <h3><%="Job Name: "+ job.name%>
+          <%=button_to 'Apply',new_job_application_path(:job_id=>job)%></h3>
+
+      <p><%= "Job Description: "+sanitize(job.content) %> <%= "Employer: "+job.employer %> <%="Deadline: "%><%=job.deadline %></p>
+    </div>
+<% end %>
