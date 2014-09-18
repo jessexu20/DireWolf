@@ -1,0 +1,37 @@
+<h1>Jobs You have Applied</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Job name</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Major</th>
+      <th>Phone</th>
+      <th>Coverletter</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jobapplications.each do |jobapplication| %>
+      <tr>
+        <td><%= jobapplication.job_name %></td>
+        <td><%= jobapplication.name %></td>
+        <td><%= jobapplication.email %></td>
+        <td><%= jobapplication.major %></td>
+        <td><%= jobapplication.phone %></td>
+        <td><%= jobapplication.coverletter %></td>
+        <td><%= jobapplication.status %></td>
+        <td><%= link_to 'Show', jobapplication %></td>
+        <td><%= link_to 'Edit', edit_jobapplication_path(jobapplication) %></td>
+        <td><%= link_to 'Destroy', jobapplication, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--%= link_to 'New Jobapplication', new_jobapplication_path %-->

@@ -1,0 +1,18 @@
+
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>DireWolf Job Portal</h1>
+
+<% @jobs.each do |job| %>
+    <div class="entry">
+      <h3><%="Job Name: "+ job.name %></h3>
+      <p><%= "Job Description: "+sanitize(job.content) %></p>
+      <p><%="Job Field "+job.field %></p>
+      <p><%= "Employer: "+job.employer %></p>
+      <p><%= "Tags: "+job.tag %></p>
+      <p><%="Deadline: "%><%=job.deadline %></p>
+      <%= button_to 'Apply',new_jobapplication_path(:job_id=>job) %>
+    </div>
+<% end %>

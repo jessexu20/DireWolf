@@ -1,0 +1,10 @@
+<h1>New Job Application</h1>
+
+
+  <%= "Applying Job Name: " + @job.name %><br>
+  <%= "Employer: "+ @job.employer %>
+
+
+<%= render 'form' %>
+
+<%= link_to 'Back', jobpool_index_url %>
