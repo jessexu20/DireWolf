@@ -37,6 +37,7 @@ class JobapplicationsController < ApplicationController
     @jobapplication.status="pending"
     @jobapplication.job_name=job.name
     @jobapplication.email=current_user.email
+    JobNotifier.received(@jobapplication).deliver
     respond_to do |format|
       if @jobapplication.save(jobapplication_params)
         format.html { redirect_to @jobapplication, notice: 'Jobapplication was successfully created.' }

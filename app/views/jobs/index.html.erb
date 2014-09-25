@@ -1,17 +1,18 @@
-<h1>Listing jobs</h1>
+<div style="color: white;"><h1>Listing jobs</h1></div>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Content</th>
-      <th>Field</th>
-      <th>Tag</th>
-      <th>Employer</th>
-      <th>Deadline</th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Name</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Content</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Field</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Tag</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Employer</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Deadline</div></th>
       <th colspan="3"></th>
     </tr>
   </thead>
+
 
   <tbody>
     <% @jobs.each do |job| %>
@@ -32,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New Job', new_job_path %>
+<div style="    font: bold 110% sans-serif;"><%= link_to 'New Job', new_job_path %></div>

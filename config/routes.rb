@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'account/view'
+
   devise_for :employers,singular: 'employer'
   devise_for :admins,singular: 'admin'
   devise_for :users

@@ -1,0 +1,17 @@
+<h1>Account</h1>
+<p>Current JobSeeker Account:</p>
+<% @users.each do|user| %>
+    <p><%= user.email %></p>
+<% end %>
+<p><%= link_to "Employer Sign up", new_employer_registration_path, :class => 'navbar-link'  %></p>
+
+<p>Current Employer Account:</p>
+<% @employers.each do|employer| %>
+   <p><%= employer.email %></p>
+<% end %>
+
+<p><%= link_to "Admin Sign up", new_admin_registration_path, :class => 'navbar-link'  %></p>
+<p>Current Admin Account:</p>
+<% @admins.each do|admin| %>
+   <p><%= admin.email %></p>
+<% end %>
