@@ -1,6 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
-
+  # before_action :authenticate_user!
   # GET /jobs
   # GET /jobs.json
   def index
@@ -69,7 +69,8 @@ class JobsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
-      params.require(:job).permit(:name, :content, :field, :tag, :employer, :deadline)
+      params.require(:job).permit(:name, :content, :field, :tag, :tag_id, :employer, :deadline, :employer_id)
     end
-  before_action :authenticate_user!
+  before_action :authenticate_employer!
+
 end

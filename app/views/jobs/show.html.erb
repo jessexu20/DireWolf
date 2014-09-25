@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div style="color:white; font: bold 150% sans-serif;"><p>
   <strong>Name:</strong>
   <%= @job.name %>
 </p>
+
 
 <p>
   <strong>Content:</strong>
@@ -20,6 +21,7 @@
   <%= @job.tag %>
 </p>
 
+
 <p>
   <strong>Employer:</strong>
   <%= @job.employer %>
@@ -29,6 +31,7 @@
   <strong>Deadline:</strong>
   <%= @job.deadline %>
 </p>
+</div>
 
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
+<div style="color:white; font: bold 150% sans-serif;"><%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %></div>

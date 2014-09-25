@@ -1,28 +1,29 @@
-<h1>Listing jobs</h1>
+<div style="color: white;"><h1>Listing jobs</h1></div>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Content</th>
-      <th>Field</th>
-      <th>Tag</th>
-      <th>Employer</th>
-      <th>Deadline</th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Name</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Content</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Field</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Tag</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Employer</div></th>
+      <th><div style="color:white;font:bold 120% sans-serif;">Deadline</div></th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
+
   <tbody>
     <% @jobs.each do |job| %>
-      <tr class='<%= cycle('list_line_odd','list_line_even') %>'>
-        <td class="list_description"><%= job.name %></td>
-        <td class="list_description"><%= job.content %></td>
-        <td class="list_description"><%= job.field %></td>
-        <td class="list_description"><%= job.tag %></td>
-        <td class="list_description"><%= job.employer %></td>
+      <tr class="<%= cycle('list_line_odd','list_line_odd') %>">
+        <td><%= job.name %></td>
+        <td><%= job.content %></td>
+        <td><%= job.field %></td>
+        <td><%= job.tag %></td>
+        <td><%= job.employer %></td>
         <td><%= job.deadline %></td>
-        <td class="list_actions"><%= link_to 'Show', job %></td>
+        <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -32,4 +33,4 @@
 
 <br>
 
-<%= link_to 'Add a New Job', new_job_path %>
+<div style="    font: bold 110% sans-serif;"><%= link_to 'New Job', new_job_path %></div>

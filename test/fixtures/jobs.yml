@@ -5,13 +5,17 @@ one:
   content: MyText
   field: MyString
   tag: MyString
+  tag_id: 1
   employer: MyString
-  deadline: 2014-09-15
+  deadline: 2014-09-17
+  employer_id: 1
 
 two:
   name: MyString
   content: MyText
   field: MyString
   tag: MyString
+  tag_id: 1
   employer: MyString
-  deadline: 2014-09-15
+  deadline: 2014-09-17
+  employer_id: 1

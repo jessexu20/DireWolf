@@ -13,44 +13,30 @@
  *= require_tree .
  *= require_self
  */
-
 #banner {
-  background: transparent;
+  background: orangered;
   padding: 35px;
   border-right: 1px solid;
   border-left: 1px solid;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   border-top: 1px solid;
   font: bold small-caps 50px/50px "utkal", serif;
-  color: coral;
+  color: white;
   text-align: left;
 
-  h1{
-    font: bold small-caps 50px/50px "utkal", serif;
-    color: white;
-  }
-  h2{
-    font: small-caps 50px/50px "utkal", serif;
-    color: orange;
-  }
-  h3{
-    font: bold small-caps 50px/50px "utkal", serif;
-    color: lightgoldenrodyellow;
-  }
-
   img {
-  float: left;
+    float: left;
   }
 }
 
 #login{
   text-align: right;
-  font: small-caps 20px/20px "utkal", serif;
-  padding: 50px 20px 10px;
+  font: small-caps 15px/15px "utkal", serif;
+
 }
 
 #notice {
-  color: #000 !important;
+  color: orangered !important;
   border: 2px solid red;
   padding: 1em;
   margin-bottom: 2em;
@@ -59,22 +45,22 @@
 }
 
 #columns {
-  background: transparent;
+  background: purple;
 
   #main {
     margin-left: 0px;
     padding: 1em;
-    background: white;
+    background: purplebar;
   }
 
   #side {
     float: right;
     padding: 80px 20px 300px;
     width: 200px;
-    background: transparent;
+    background: orangered;
 
     margin-top: 0px;
-    font: small-caps 40px/40px "Meera", serif;
+    font: bold small-caps 40px/40px "Meera", serif;
 
     ul {
       padding: 10px;
@@ -82,8 +68,8 @@
       li {
         list-style: none;
         a {
-          color: black;
-          font: italic 140% sans-serif;
+          color: white;
+          font: bold 160% sans-serif;
         }
       }
     }
