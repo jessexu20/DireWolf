@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :employers,singular: 'employer'
+  # devise_for :employers,singular: 'employer'
+  devise_for :employers, :controllers => { :registrations => "registrations" }
   devise_for :admins,singular: 'admin'
+  # devise_for :admins, :controllers => { :registrations => "adminregistrations" }
   devise_for :users
   resources :jobapplications
 
