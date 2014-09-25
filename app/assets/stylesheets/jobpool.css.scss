@@ -2,26 +2,29 @@
 .job_pool {
   h1 {
     margin: 0;
+    padding-top: 20px;
     padding-bottom: 0.5em;
-    font:  150% sans-serif;
-    color: #226;
-    border-bottom: 3px dotted #77d;
+    font:  bold 200% sans-serif;
+    color: orange;
+    border-bottom: 3px solid white;
   }
 
   /* An entry in the store catalog */
   .entry {
     overflow: auto;
     margin-top: 1em;
-    border-bottom: 1px dotted #77d;
+    margin-left: 0px;
+    font: bold 120% sans-serif;
+    border-bottom: 1px solid white;
     min-height: 100px;
 
     h3 {
       font-size: 120%;
       font-family: sans-serif;
-      margin-left: 100px;
+      margin-left: 0px;
       margin-top: 0;
       margin-bottom: 2px;
-      color: #227;
+      color: white;
     }
   }
 }
