@@ -34131,3 +34131,1199 @@ Processing by Admins::RegistrationsController#new as HTML
   Rendered admins/registrations/new.html.erb within layouts/application (12.9ms)
 Completed 200 OK in 258ms (Views: 250.8ms | ActiveRecord: 0.6ms)
 >>>>>>> 8aceaffb2bc86f8a5b9c42389d1a85b8d5299e57
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 16:55:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.2ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (35.4ms)
+Completed 500 Internal Server Error in 69ms
+
+SyntaxError (/Users/jessexu/Documents/North Carolina State University/Courses/ECE517 Object-Oriented Languages and Systems/Rails/DireWolf/app/views/layouts/application.html.erb:96: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/layouts/application.html.erb:96: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 16:56:06 -0400
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 10ms
+
+SyntaxError (/Users/jessexu/Documents/North Carolina State University/Courses/ECE517 Object-Oriented Languages and Systems/Rails/DireWolf/app/views/layouts/application.html.erb:96: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/layouts/application.html.erb:96: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.2ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (34.5ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1
+  [1m[36mEmployer Load (0.2ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+Completed 200 OK in 376ms (Views: 346.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/jobapplications.css?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 16:59:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 16:59:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (5.1ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+Completed 200 OK in 145ms (Views: 143.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (3.9ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+Completed 200 OK in 136ms (Views: 134.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/jobapplications.css?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 17:01:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (5.3ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+Completed 200 OK in 127ms (Views: 125.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jobapplications.css?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 17:49:55 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 17:50:14 -0400
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (6.9ms)
+  [1m[35mAdmin Load (0.1ms)[0m  SELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+Completed 200 OK in 137ms (Views: 134.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobapplications.css?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 17:50:41 -0400
+
+
+Started GET "/employers/sign_in" for 127.0.0.1 at 2014-09-26 17:50:57 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.3.0/app/views/devise/shared/_links.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 219ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employers/sign_in" for 127.0.0.1 at 2014-09-26 17:51:02 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 121ms (Views: 120.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employers/sign_in" for 127.0.0.1 at 2014-09-26 17:51:05 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/employers/sign_in" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kgw6oC+EcYufKTb1MYsMNlMlt0Vs9rPc2SqSGgc7xbA=", "employer"=>{"email"=>"employer@employer.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mEmployer Load (0.3ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."email" = 'employer@employer.com'  ORDER BY "employers"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "employers" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "employers"."id" = 5  [["current_sign_in_at", "2014-09-26 21:51:14.251462"], ["last_sign_in_at", "2014-09-26 17:37:14.217242"], ["sign_in_count", 8], ["updated_at", "2014-09-26 21:51:14.252629"]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 111ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (56.7ms)
+  [1m[35mEmployer Load (0.2ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1
+Completed 200 OK in 146ms (Views: 144.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 17:51:14 -0400
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-09-26 17:51:22 -0400
+Processing by JobsController#index as HTML
+  [1m[36mEmployer Load (0.2ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs"  WHERE "jobs"."employer_id" = ?  [["employer_id", 5]]
+  Rendered jobs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 143ms (Views: 118.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs/8" for 127.0.0.1 at 2014-09-26 17:51:24 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT  "jobs".* FROM "jobs"  WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/jobs/8" for 127.0.0.1 at 2014-09-26 17:51:44 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mJob Load (0.1ms)[0m  SELECT  "jobs".* FROM "jobs"  WHERE "jobs"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mEmployer Load (0.2ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered jobs/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 113ms (Views: 110.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-09-26 17:51:47 -0400
+Processing by JobsController#index as HTML
+  [1m[36mEmployer Load (0.2ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"  WHERE "jobs"."employer_id" = ?  [["employer_id", 5]]
+  Rendered jobs/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 129ms (Views: 125.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs/8" for 127.0.0.1 at 2014-09-26 17:51:49 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT  "jobs".* FROM "jobs"  WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobs/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 116ms (Views: 113.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs/8" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mJob Load (0.1ms)[0m  SELECT  "jobs".* FROM "jobs"  WHERE "jobs"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mEmployer Load (0.2ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered jobs/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 124ms (Views: 121.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/jobapplications.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+
+
+Started GET "/jobs/" for 127.0.0.1 at 2014-09-26 18:32:43 -0400
+Processing by JobsController#index as HTML
+  [1m[36mEmployer Load (0.3ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"  WHERE "jobs"."employer_id" = ?  [["employer_id", 5]]
+  Rendered jobs/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 133ms (Views: 127.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 18:32:47 -0400
+Processing by JobpoolController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC[0m
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (4.7ms)
+  [1m[36mEmployer Load (0.2ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1[0m
+Completed 200 OK in 114ms (Views: 113.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/employers/sign_out" for 127.0.0.1 at 2014-09-26 18:32:51 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1QmSQ+eQ5eAuoGOls3ntNqc9d/SNhekKymD//LnOOdA="}
+  [1m[35mEmployer Load (0.3ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = 5  ORDER BY "employers"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 18:32:51 -0400
+Processing by JobpoolController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC[0m
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 123ms (Views: 121.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:52 -0400
+
+
+Started POST "/jobapplications/new?job_id=3" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+Processing by JobapplicationsController#new as HTML
+  Parameters: {"authenticity_token"=>"L/B+OhYyzKiFdXSbgkItlPbJgBqcmzJ8MpFELC07HBM=", "job_id"=>"3"}
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 140ms (Views: 130.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:32:54 -0400
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-26 18:33:00 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L/B+OhYyzKiFdXSbgkItlPbJgBqcmzJ8MpFELC07HBM=", "user"=>{"email"=>"student@student.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'student@student.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["current_sign_in_at", "2014-09-26 22:33:00.900738"], ["last_sign_in_at", "2014-09-26 16:03:15.035028"], ["sign_in_count", 11], ["updated_at", "2014-09-26 22:33:00.901916"]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 110ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 18:33:00 -0400
+Processing by JobpoolController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC[0m
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (6.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:01 -0400
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:03 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mJobapplication Load (0.2ms)[0m  [1mSELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 147ms (Views: 143.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/jobapplications/22" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"22"}
+  [1m[35mJobapplication Load (0.3ms)[0m  SELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?[0m  [["id", 22]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 11ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mJobapplication Load (0.2ms)[0m  SELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 129ms (Views: 126.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:09 -0400
+
+
+Started DELETE "/jobapplications/23" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"23"}
+  [1m[36mJobapplication Load (0.2ms)[0m  [1mSELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1[0m  [["id", 23]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?  [["id", 23]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 19ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mJobapplication Load (0.1ms)[0m  [1mSELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 144ms (Views: 141.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:11 -0400
+
+
+Started DELETE "/jobapplications/24" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"24"}
+  [1m[35mJobapplication Load (0.1ms)[0m  SELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?[0m  [["id", 24]]
+  [1m[35m (8.2ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 13ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mJobapplication Load (0.1ms)[0m  SELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 84ms (Views: 81.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:13 -0400
+
+
+Started DELETE "/jobapplications/25" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"25"}
+  [1m[36mJobapplication Load (0.2ms)[0m  [1mSELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1[0m  [["id", 25]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?  [["id", 25]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 17ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mJobapplication Load (0.1ms)[0m  [1mSELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 70ms (Views: 67.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:16 -0400
+
+
+Started DELETE "/jobapplications/26" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"26"}
+  [1m[35mJobapplication Load (0.2ms)[0m  SELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1  [["id", 26]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?[0m  [["id", 26]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mJobapplication Load (0.1ms)[0m  SELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:18 -0400
+
+
+Started DELETE "/jobapplications/27" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"27"}
+  [1m[36mJobapplication Load (0.1ms)[0m  [1mSELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1[0m  [["id", 27]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?  [["id", 27]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 13ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mJobapplication Load (0.1ms)[0m  [1mSELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 147ms (Views: 144.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:21 -0400
+
+
+Started DELETE "/jobapplications/28" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"28"}
+  [1m[35mJobapplication Load (2.5ms)[0m  SELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1  [["id", 28]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?[0m  [["id", 28]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 20ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mJobapplication Load (0.2ms)[0m  SELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 132ms (Views: 129.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:22 -0400
+
+
+Started DELETE "/jobapplications/29" for 127.0.0.1 at 2014-09-26 18:33:24 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"29"}
+  [1m[36mJobapplication Load (0.2ms)[0m  [1mSELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1[0m  [["id", 29]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?  [["id", 29]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 17ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:24 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mJobapplication Load (0.1ms)[0m  [1mSELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 130ms (Views: 127.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:25 -0400
+
+
+Started DELETE "/jobapplications/30" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+Processing by JobapplicationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BsHPW1mfOLhYQMBgffHyqovfpmX8E/RLwnor1AwRHDY=", "id"=>"30"}
+  [1m[35mJobapplication Load (0.2ms)[0m  SELECT  "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."id" = ? LIMIT 1  [["id", 30]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "jobapplications" WHERE "jobapplications"."id" = ?[0m  [["id", 30]]
+  [1m[35m (11.4ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/jobapplications
+Completed 302 Found in 21ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/jobapplications" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+Processing by JobapplicationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mJobapplication Load (0.1ms)[0m  SELECT "jobapplications".* FROM "jobapplications"  WHERE "jobapplications"."user_id" = ?  [["user_id", 3]]
+  Rendered jobapplications/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 126ms (Views: 123.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 18:33:26 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 18:33:28 -0400
+Processing by JobpoolController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC[0m
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEmployer Load (0.1ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.5ms)
