@@ -4,7 +4,11 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.all
+    @employer=current_employer
+    @jobs = @employer.jobs
+    @jobs.each do |job|
+      @jobapplications=job.jobapplications
+    end
   end
 
   # GET /jobs/1

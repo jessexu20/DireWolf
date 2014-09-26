@@ -1,4 +1,4 @@
-<div style="color: white;"><h1>Listing jobs</h1></div>
+<div style="color: white;"><h1>Jobs You have Posted</h1></div>
 
 <table>
   <thead>
@@ -28,6 +28,10 @@
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+    <% @jobapplications.each do |jobapplication| %>
+        <td><%= jobapplication.name%></td>
+        <td><%= jobapplication.email %></td>
+      <% end %>
   </tbody>
 </table>
 
