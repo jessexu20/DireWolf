@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'account/view'
+  get 'applicationlist/view'
 
   # devise_for :employers,singular: 'employer'
   devise_for :employers, :controllers => { :registrations => "registrations" }
