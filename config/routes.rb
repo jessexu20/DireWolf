@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   get 'account/view'
 
-# devise_for :employers,singular: 'employer'
-devise_for :employers, :controllers => { :registrations => "registrations" }
-# devise_for :admins,singular: 'admin'
-devise_for :admins, :controllers => { :registrations => "admins/registrations" }
-devise_for :users
-resources :jobapplications
+  # devise_for :employers,singular: 'employer'
+  devise_for :employers, :controllers => { :registrations => "registrations" }
+  # devise_for :admins,singular: 'admin'
+  devise_for :admins, :controllers => { :registrations => "admins/registrations" }
+  devise_for :users
+  resources :jobapplications
+
 
   get 'jobpool/index'
   post 'jobapplications/new'
