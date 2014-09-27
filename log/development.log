@@ -43684,3 +43684,81 @@ Processing by JobpoolController#index as HTML
   Rendered jobpool/index.html.erb within layouts/application (3.6ms)
   [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1
 Completed 200 OK in 127ms (Views: 125.4ms | ActiveRecord: 0.5ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobpoolController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"   ORDER BY "jobs"."name" ASC
+  [1m[36mEmployer Load (0.3ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmployer Load (0.1ms)[0m  SELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employers".* FROM "employers"  WHERE "employers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered jobpool/index.html.erb within layouts/application (53.3ms)
+  [1m[35mAdmin Load (0.1ms)[0m  SELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1
+Completed 200 OK in 327ms (Views: 297.1ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/appllist.css?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/jobpool.css?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/jobapplications.css?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/appllist.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/jobapplications.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/jobpool.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 23:20:58 -0400
+
+
+Started GET "/account/view" for 127.0.0.1 at 2014-09-26 23:21:03 -0400
+Processing by AccountController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"   ORDER BY "users"."email" ASC[0m
+  [1m[35mEmployer Load (0.2ms)[0m  SELECT "employers".* FROM "employers"   ORDER BY "employers"."email" ASC
+  [1m[36mAdmin Load (0.1ms)[0m  [1mSELECT "admins".* FROM "admins"   ORDER BY "admins"."email" ASC[0m
+  Rendered account/view.html.erb within layouts/application (10.7ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1
+Completed 200 OK in 133ms (Views: 130.5ms | ActiveRecord: 0.9ms | Solr: 0.0ms)
+
+
+Started GET "/employers/sign_up" for 127.0.0.1 at 2014-09-26 23:21:04 -0400
+Processing by RegistrationsController#new as HTML
+  Rendered employers/shared/_links.erb (2.1ms)
+  Rendered employers/registrations/new.html.erb within layouts/application (76.3ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins"  WHERE "admins"."id" = 1  ORDER BY "admins"."id" ASC LIMIT 1[0m
+Completed 200 OK in 158ms (Views: 156.3ms | ActiveRecord: 0.2ms | Solr: 0.0ms)

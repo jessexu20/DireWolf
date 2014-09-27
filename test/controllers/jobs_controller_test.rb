@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class JobsControllerTest < ActionController::TestCase
+  fixtures :jobs
+  # fixtures :authenticate!
   setup do
     @job = jobs(:one)
   end

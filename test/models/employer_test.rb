@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class EmployerTest < ActiveSupport::TestCase
-  # test "the truth" do
+   test "Employer attributes must not be empty" do
   #   assert true
-  # end
+     employer = Employer.new
+     assert employer.invalid?
+     assert employer.errors[:email].any?
+   end
 end
