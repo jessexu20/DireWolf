@@ -2,12 +2,19 @@
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
+
 an admin user can be created
+
 an admin user can create Employers
+
 Jobs and Applications will be deleted upon delete of the Employer (say, disappear)
+
 an Employer can see the JobApplications on the Job(s) that they have created
+
 they can update the status of the same
+
 a JobSeeker can view related Jobs based on what Jobs they have applied to in the past
+
 each controller and model have at least one test covering it
 
 the link should be 152.46.17.104:3000
