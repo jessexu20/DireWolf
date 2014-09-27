@@ -33,11 +33,13 @@ class JobapplicationsController < ApplicationController
     @jobapplication = @user.jobapplications.build(job:job)
     @jobapplication.name=jobapplication_params[:name]
     @jobapplication.phone=jobapplication_params[:phone]
-    @jobapplication.email=jobapplication_params[:major]
+    @jobapplication.major=jobapplication_params[:major]
     @jobapplication.coverletter=jobapplication_params[:coverletter]
     @jobapplication.status="pending"
     @jobapplication.job_name=job.name
     @jobapplication.email=current_user.email
+    @jobapplication.job_id=job.id
+    # @jobapplication.user_id=current_user.id
     JobNotifier.received(@jobapplication).deliver
     respond_to do |format|
       if @jobapplication.save(jobapplication_params)
@@ -55,9 +57,8 @@ class JobapplicationsController < ApplicationController
   def update
     @user=current_user
     job=Job.find(session[:job_id])
-
     @jobapplication = @user.jobapplications.build(job:job)
-    @jobapplication.status="pending"
+    # @jobapplication.status="pending"
     @jobapplication.job_name=job.name
     @jobapplication.email=current_user.email
     respond_to do |format|

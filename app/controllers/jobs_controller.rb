@@ -3,20 +3,9 @@ class JobsController < ApplicationController
   # before_action :authenticate_user!
   # GET /jobs
   # GET /jobs.json
-  def set_Status(jobapplication)
-    jobapplication.status="view"
-  end
   def index
-
     @employer=current_employer
     @jobs = @employer.jobs
-    # @jobapplications=@job.jobapplications
-    @jobs.each do |job|
-        if job!=nil
-          @jobapplications=job.jobapplications
-        end
-    end
-    # jobapplications=Jobapplication.find(params[:job_id])
   end
 
   # GET /jobs/1

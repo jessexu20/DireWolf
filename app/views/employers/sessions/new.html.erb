@@ -1,6 +1,8 @@
 <h2>Employer Log in</h2>
 <%= "Employer Log in" %>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div><%= f.label :employer_name %><br />
+      <%= f.text_field :employer_name, autofocus: true %></div>
   <div><%= f.label :email %><br />
   <%= f.email_field :email, autofocus: true %></div>
 

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  get 'jobpool/search'
+
+  get 'appllist/update_status'
+  get 'appllist/list'
+
   get 'account/view'
-  get 'applicationlist/view'
 
   # devise_for :employers,singular: 'employer'
   devise_for :employers, :controllers => { :registrations => "registrations" }
