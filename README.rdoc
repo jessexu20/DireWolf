@@ -18,3 +18,15 @@ a JobSeeker can view related Jobs based on what Jobs they have applied to in the
 each controller and model have at least one test covering it
 
 the link should be 152.46.17.104:3000
+
+
+UserName:
+
+Admin:
+admin@admin.com
+
+Employer:
+employer@employer.com
+
+Job Seeker:
+student@student.com
