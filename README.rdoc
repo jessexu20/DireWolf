@@ -30,3 +30,12 @@ employer@employer.com
 
 Job Seeker:
 student@student.com
+
+Jobs to be done during the resubmission period:
+
+Covering functional test for every controller
+
+Using cucumber testing tool
+
+Refine search function
+
