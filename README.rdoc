@@ -24,12 +24,25 @@ UserName:
 
 Admin:
 admin@admin.com
+PW:12345678
+adm1ncsu@hotmail.com
+PW:project1
 
 Employer:
 employer@employer.com
+PW:12345678
 
+emp1ncsu@gmail.com
+PW:project1
+
+emp2ncsu@hotmail.com
+PW:project1
 Job Seeker:
 student@student.com
+PW:12345678
+
+std1ncsu@hotmail.com
+PW:project1
 
 Jobs to be done during the resubmission period:
 
