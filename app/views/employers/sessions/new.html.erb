@@ -1,5 +1,5 @@
-<h2>Employer Log in</h2>
-<%= "Employer Log in" %>
+<div style="color:white; "><h2>Employer Log in</h2>
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div><%= f.label :employer_name %><br />
       <%= f.text_field :employer_name, autofocus: true %></div>
@@ -15,5 +15,6 @@
 
   <div><%= f.submit "Log in" %></div>
 <% end %>
+</div>
 
 <%= render "employers/shared/links" %>
