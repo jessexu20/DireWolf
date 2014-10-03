@@ -1,4 +1,4 @@
-<h1>Account</h1>
+<div style="color:white; "><h1>Account</h1>
 <p>Current JobSeeker Account:</p>
 <% @users.each do|user| %>
     <p><%= user.email %></p>
@@ -7,6 +7,7 @@
 
 <p>Current Employer Account:</p>
 <% @employers.each do|employer| %>
+   <p><%="employer Name:"%><%= employer.employer_name %></p>
    <p><%= employer.email %></p>
 <% end %>
 
@@ -15,3 +16,4 @@
 <% @admins.each do|admin| %>
    <p><%= admin.email %></p>
 <% end %>
+</div>
