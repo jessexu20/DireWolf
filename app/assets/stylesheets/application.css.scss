@@ -14,12 +14,12 @@
  *= require_self
  */
 #banner {
-  background: orangered;
+  background: #225378;
   padding: 35px;
   border-right: 1px solid;
   border-left: 1px solid;
   border-bottom: 2px solid;
-  border-top: 1px solid;
+
   font: bold small-caps 50px/50px "utkal", serif;
   color: white;
   text-align: left;
@@ -31,8 +31,7 @@
 
 #login{
   text-align: right;
-  font: small-caps 15px/15px "utkal", serif;
-
+  font: small-caps 15px/15px "utkal", sans-serif;
 }
 
 #notice {
@@ -45,7 +44,7 @@
 }
 
 #columns {
-  background: purple;
+  background: #1695A3;
 
   #main {
     margin-left: 0px;
@@ -55,9 +54,9 @@
 
   #side {
     float: right;
-    padding: 80px 20px 300px;
+    padding: 80px 20px 800px;
     width: 200px;
-    background: orangered;
+    background: #225378;
 
     margin-top: 0px;
     font: bold small-caps 40px/40px "Meera", serif;
