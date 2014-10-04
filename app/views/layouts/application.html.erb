@@ -30,6 +30,7 @@
     <% if not admin_signed_in? and not user_signed_in? %>
     <% if employer_signed_in? %>
         Logged in as <strong><%= current_employer.email %></strong>.
+        <%= link_to 'Delete Account', employer_registration_path, data: { confirm: "Are you sure?" }, method: :delete %>
         <%= link_to 'Edit profile', edit_employer_registration_path, :class => 'navbar-link' %> |
         <%= link_to "Logout", destroy_employer_session_path, method: :delete, :class => 'navbar-link'  %>
     <% else %>
@@ -40,7 +41,10 @@
     <% if not employer_signed_in? and not user_signed_in? %>
           <% if admin_signed_in? %>
               Logged in as <strong><%= current_admin.email %></strong>.
+                <% if current_admin.email!="admin@admin.com"  %>
+              <%= link_to 'Delete Account', admin_registration_path, data: { confirm: "Are you sure?" }, method: :delete %>
               <%= link_to 'Edit profile', edit_admin_registration_path, :class => 'navbar-link' %> |
+                <% end %>
               <%= link_to "Logout", destroy_admin_session_path, method: :delete, :class => 'navbar-link'  %>|
               <%= link_to "Create Employer", new_employer_registration_path, :class => 'navbar-link'  %>|
                 <%= link_to "Create Admin", new_admin_registration_path, :class => 'navbar-link'  %>
