@@ -7,28 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body class='<%= controller_name %>'>
-<p class="navbar-text pull-right">
-
-  <div id="login">
-  <% if not admin_signed_in? and not employer_signed_in? %>
-  <% if user_signed_in?%>
-      Logged in as <strong><%= current_user.email %></strong>.
-      <% %>
-      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-  <% else %>
-    <%= link_to "Job Seeker Login", new_user_session_path, :class => 'navbar-link'  %>
 
 
-      <% end %>
-  <% end %>
 
-    </div>
+
   <!--employer Login/sign up-->
 
-  <p class="navbar-text pull-right">
-    <div id="login">
+<p class="navbar-text pull-right">
+    <div style="background: #225378 color: white"><div id="login">
       <div style="padding-right:40px;">
+        <% if not admin_signed_in? and not employer_signed_in? %>
+            <% if user_signed_in?%>
+                Logged in as <strong><%= current_user.email %></strong>.
+                <% %>
+                <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+            <% else %>
+               <%= link_to "Job Seeker Login", new_user_session_path, :class => 'navbar-link'  %> |
+            <% end %>
+            <% end %>
+
     <% if not admin_signed_in? and not user_signed_in? %>
     <% if employer_signed_in? %>
         Logged in as <strong><%= current_employer.email %></strong>.
@@ -52,6 +50,8 @@
     <% end %>
         </div>
       </div>
+      </div>
+
   <!--Admin Login/sign up-->
     <!--p class="navbar-text pull-right">
       <div id="login">
