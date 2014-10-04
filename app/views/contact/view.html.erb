@@ -1,0 +1,20 @@
+<div style="color:white; "><h1>Contact</h1>
+  <div style="color:white; "><h2>GitHub</h2> </div>
+  <%="https://github.ncsu.edu/sxu11/DireWolf/"  %>
+  <p><%= "initial password:"+"12345678"%></p>
+  <h2>Existing JobSeeker Account:</h2>
+  <% @users.each do|user| %>
+      <p><%= user.email %></p>
+  <% end %>
+
+  <h2>Existing Employer Account:</h2>
+  <% @employers.each do|employer| %>
+      <p><%="employer Name:"%><%= employer.employer_name %><%="\t employer Email:"%><%= employer.email %> </p>
+
+  <% end %>
+
+  <h2>Existing Admin Account:</h2>
+  <% @admins.each do|admin| %>
+      <p><%= admin.email %></p>
+  <% end %>
+</div>
