@@ -27,6 +27,8 @@ class JobsController < ApplicationController
   def create
     @employer=current_employer
     @job = @employer.jobs.build(job_params)
+    @job.employer_name=@employer.employer_name
+    @job.employer_id=@employer.employer_id
     respond_to do |format|
       if @job.save
         format.html { redirect_to @job, notice: 'Job was successfully created.' }
