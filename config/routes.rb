@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contact/view'
+
   get 'jobpool/search'
 
   get 'appllist/update_status'
