@@ -20,8 +20,10 @@
     <%= f.text_area :content ,rows:8%>
   </div>
   <div class="field">
+    <% category_array = Category.all.map { |category| [category.category_name] } %>
     <%= f.label :field %><br>
-    <%= f.text_field :field %>
+    <%= f.select :field,category_array,
+                 :prompt=>'Select a Category' %>
   </div>
   <div class="field">
     <%= f.label :tag %><br>

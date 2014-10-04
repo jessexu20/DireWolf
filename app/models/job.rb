@@ -1,12 +1,7 @@
 class Job < ActiveRecord::Base
-  validates_presence_of :name,:content,:field,:employer,:deadline,:tag
+  validates_presence_of :name,:content,:field,:employer_name,:deadline,:tag
   has_many :jobapplications,dependent: :destroy
   belongs_to :employer
-  searchable do
-    text :name
-    text :employer
-    text :tag
-    text :content
-    text :field
-  end
+  has_one :category
+
 end

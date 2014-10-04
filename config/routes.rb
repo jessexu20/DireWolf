@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :categories
+
   get 'contact/view'
 
   get 'jobpool/search'
@@ -14,7 +16,6 @@ Rails.application.routes.draw do
   devise_for :admins, :controllers => { :registrations => "admins/registrations" }
   devise_for :users
   resources :jobapplications
-
 
   get 'jobpool/index'
   post 'jobapplications/new'
