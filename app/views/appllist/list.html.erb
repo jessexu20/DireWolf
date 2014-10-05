@@ -26,7 +26,7 @@
         <td><%= jobapplication.coverletter %></td>
         <td><%= jobapplication.created_at %></td>
         <td><%= jobapplication.status %></td>
-        <td><%= link_to 'Pending',appllist_update_status_path(:jobapplication_id=>jobapplication,:update_status=>"Under Review")%></td>
+        <td><%= link_to 'Pending',appllist_update_status_path(:jobapplication_id=>jobapplication,:update_status=>"Pending")%></td>
         <td><%= link_to 'Under Review',appllist_update_status_path(:jobapplication_id=>jobapplication,:update_status=>"Under Review")%></td>
         <td><%= link_to 'Future Interview',appllist_update_status_path(:jobapplication_id=>jobapplication,:update_status=>"Future Interview")%></td>
       </tr>
