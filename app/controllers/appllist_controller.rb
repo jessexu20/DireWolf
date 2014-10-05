@@ -10,7 +10,11 @@ class AppllistController < ApplicationController
   end
   def update_status
     @jobapplication=Jobapplication.find(params[:jobapplication_id])
-    status="underView"
+    logger.debug params[:update_status].to_s
+    # logger.debug "aaaaaa"
+    status=params[:update_status].to_s
+    logger.debug status
+    # status=status_id
     respond_to do |format|
       if @jobapplication.update(:status=>status)
         format.html { redirect_to appllist_list_url(:job_id=>@jobapplication.job_id), notice: 'Jobapplication was successfully updated.' }
