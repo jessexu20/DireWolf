@@ -23,10 +23,10 @@
                 <% if !job.outdated %>
                     <%= button_to 'Apply',new_jobapplication_path(:job_id=>job) %>
                 <% else %>
-                <p>Job is out of date</p>
+                <div style="padding-top:5px; padding-left:10px; font: bold 120% sans-serif; color:black;"<p>Job is out of date</p></div>
                 <% end %>
             <% else  %>
-            <p> Applied</p>
+                <div style="padding-top:5px; padding-left:10px; font: bold 120% sans-serif; color:black;"<p> Applied</p></div>
             <% end %>
         <% end %>
       </div>

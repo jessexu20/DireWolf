@@ -1,6 +1,7 @@
 <div style="color: white;"><h1>Jobs You have Posted</h1>
 
 <table>
+
   <thead>
     <tr>
       <th><div style="color:white;font:bold 120% sans-serif;">Name</div></th>
@@ -16,6 +17,7 @@
 
 
   <tbody>
+
     <% @jobs.each do |job| %>
       <tr class="<%= cycle('list_line_odd','list_line_odd') %>">
         <td><%= job.name %></td>
@@ -30,7 +32,9 @@
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+
   </tbody>
+
 </table>
 
 <br>
