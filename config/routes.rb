@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'recommendation/view'
+
   resources :categories
 
   get 'contact/view'
