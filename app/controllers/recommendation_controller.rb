@@ -9,7 +9,7 @@ class RecommendationController < ApplicationController
       @categories.append(@job.field)
     end
     @categories.each do |category|
-      @reccjob=Job.find_by_field(category)
+      @reccjob=Job.find_all_by_field(category)
       if @reccjob!=@job and @reccjob.outdated==FALSE
         @recjobs.append(@reccjob)
       end
