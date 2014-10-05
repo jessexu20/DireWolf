@@ -35,7 +35,7 @@ class JobapplicationsController < ApplicationController
     @jobapplication.phone=jobapplication_params[:phone]
     @jobapplication.major=jobapplication_params[:major]
     @jobapplication.coverletter=jobapplication_params[:coverletter]
-    @jobapplication.status="pending"
+    @jobapplication.status="Pending"
     @jobapplication.job_name=job.name
     @jobapplication.email=current_user.email
     @jobapplication.job_id=job.id

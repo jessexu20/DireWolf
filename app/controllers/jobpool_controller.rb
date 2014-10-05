@@ -1,5 +1,6 @@
 class JobpoolController < ApplicationController
   def index
+    @user=current_user
     @jobs=Job.order(:name)
   end
   def search
