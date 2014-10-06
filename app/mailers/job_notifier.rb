@@ -12,4 +12,10 @@ class JobNotifier < ActionMailer::Base
     @greeting = "Greetings!"
     mail to:  jobapplication.email,subject: 'Application Received'
   end
+  def stupdated(jobapplication)
+    @jobapplication=jobapplication
+    @job=Job.find_by_name(jobapplication.job_name)
+    @greeting = "Greetings!"
+    mail to:  jobapplication.email,subject: 'Application Status has been Updated'
+  end
 end
