@@ -5,10 +5,7 @@
 
 <div style="color:white;border-bottom: 3px solid white; "><h1>Job Listing</h1>
   <%= form_tag("jobpool/search", :method => "get") do %>
-      <%= label_tag(:name, "Title:") %>&nbsp;<%= text_field_tag(:name) %>&nbsp;
-      <%= label_tag(:content, "Content:") %>&nbsp;<%= text_field_tag(:content) %>&nbsp;
-      <%= label_tag(:employer_name, "Employer:") %>&nbsp;<%= text_field_tag(:employer_name) %>&nbsp;
-      <%= label_tag(:category_name, "Category:") %>&nbsp;<%= text_field_tag(:category_name) %>&nbsp;<%= submit_tag("Search") %>
+      <%= label_tag(:searchText, "Search:") %>&nbsp;<%= text_field_tag(:searchText) %>&nbsp;<%= submit_tag("Search") %>
   <% end %>
   <br>
 </div>

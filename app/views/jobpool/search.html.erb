@@ -3,7 +3,13 @@
     <p id="notice"><%= notice %></p>
 <% end %>
 
-<div style="color:white;border-bottom: 3px solid white; "><h1>Job Listing</h1></div>
+<div style="color:white;border-bottom: 3px solid white; "><h1>Job Listing</h1>
+
+  <%= form_tag(jobpool_search_path, :method => "get") do %>
+      <%= label_tag(:searchText, "Search:") %>&nbsp;<%= text_field_tag(:searchText) %>&nbsp;<%= submit_tag("Search") %>
+  <% end %>
+<br>
+</div>
 
 <% @jobs.each do |job| %>
     <div class="entry">
