@@ -2,8 +2,8 @@
   Author: Shiqian Xu, Miaohua Liu, Qiyu Zhou
   <div style="color:white; "><h2>GitHub</h2> </div>
     <a href="https://github.ncsu.edu/sxu11/DireWolf/">GitHub Link</a>
-  <p><%= "initial password for all fake account:"+"12345678"%></p>
-  <p><%= "password for real email address is \'project1\', so that you can test mail notification functions" %></p>
+  <p><%= "initial password for all account in DireWolf:"+"12345678"%></p>
+  <p><%= "You can log in the real email account at mail.google.com using password \'project1\', so that you can test mail notification functions" %></p>
   <p><%= "emp1ncsu@gmail.com, std1ncsu@hotmail.com, which respectively is an employer account and a job seeker account"  %></p>
   <h2>Existing JobSeeker Account:</h2>
   <% @users.each do|user| %>
@@ -20,4 +20,7 @@
   <% @admins.each do|admin| %>
       <p><%="admin account: " %><%= admin.email %></p>
   <% end %>
+  <%= "Once an application has been made,an email will be sent to the employer indicating that a jobseeker has applied for the job (s)he posted "%>
+  <br>
+  <%= "Once an application status has been changed,an email will be sent to the jobseeker indicating that the application status has been changed "%>
 </div>
