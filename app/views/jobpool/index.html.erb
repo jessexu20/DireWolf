@@ -27,6 +27,8 @@
             <% else  %>
                 <div style="padding-top:5px; padding-left:10px; font: bold 120% sans-serif; color:black;"<p> Applied</p></div>
             <% end %>
+        <% elsif !employer_signed_in? and !admin_signed_in? %>
+            <%= button_to 'Apply',new_jobapplication_path(:job_id=>job) %>
         <% end %>
       </div>
       <br>

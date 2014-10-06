@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="601914e1-f51a-43d5-805e-7d06be3fdaea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/job.rb" afterPath="$PROJECT_DIR$/app/models/job.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/jobpool_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/jobpool_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/jobpool/index.html.erb" afterPath="$PROJECT_DIR$/app/views/jobpool/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/jobpool/search.html.erb" afterPath="$PROJECT_DIR$/app/views/jobpool/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DireWolf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,17 +40,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/jobpool/search.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4609929" vertical-offset="0" max-vertical-offset="720">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state vertical-scroll-proportion="-8.75" vertical-offset="165" max-vertical-offset="765">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding>
                 <element signature="e#464#562#0#HTML" expanded="true" />
                 <element signature="e#635#713#0#HTML" expanded="true" />
                 <element signature="e#965#1049#0#HTML" expanded="true" />
                 <element signature="e#1152#1236#0#HTML" expanded="true" />
-                <element signature="e#1339#1469#0#HTML" expanded="true" />
+                <element signature="e#1482#1612#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/jobpool/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="735">
-              <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+            <state vertical-scroll-proportion="1.0321101" vertical-offset="0" max-vertical-offset="765">
+              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -143,10 +142,10 @@
         <option value="$PROJECT_DIR$/app/controllers/recommendation_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/recommendation/view.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/jobpool/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/job.rb" />
         <option value="$PROJECT_DIR$/app/controllers/jobpool_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/jobpool/search.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/jobpool/index.html.erb" />
       </list>
     </option>
   </component>
@@ -1118,14 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/jobpool/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="735">
-          <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobapplications/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
@@ -1152,15 +1143,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobpool/search.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4609929" vertical-offset="0" max-vertical-offset="720">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state vertical-scroll-proportion="-8.75" vertical-offset="165" max-vertical-offset="765">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding>
             <element signature="e#464#562#0#HTML" expanded="true" />
             <element signature="e#635#713#0#HTML" expanded="true" />
             <element signature="e#965#1049#0#HTML" expanded="true" />
             <element signature="e#1152#1236#0#HTML" expanded="true" />
-            <element signature="e#1339#1469#0#HTML" expanded="true" />
+            <element signature="e#1482#1612#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/jobpool/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0321101" vertical-offset="0" max-vertical-offset="765">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
