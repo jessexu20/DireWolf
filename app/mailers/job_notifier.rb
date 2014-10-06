@@ -9,8 +9,9 @@ class JobNotifier < ActionMailer::Base
   def received(jobapplication)
     @jobapplication=jobapplication
     @job=Job.find_by_name(jobapplication.job_name)
+    @em_email=@job.employer.email
     @greeting = "Greetings!"
-    mail to:  jobapplication.email,subject: 'Application Received'
+    mail to:  @em_email,subject: 'Application Received'
   end
   def stupdated(jobapplication)
     @jobapplication=jobapplication

@@ -8,5 +8,4 @@ class JobNotifierPreview < ActionMailer::Preview
   def stupdated
     JobNotifier.stupdated
   end
-
 end
