@@ -1,11 +1,13 @@
 <div style="color:white; "><h1>Contact</h1>
   Author: Shiqian Xu, Miaohua Liu, Qiyu Zhou
   <div style="color:white; "><h2>GitHub</h2> </div>
-  <%="https://github.ncsu.edu/sxu11/DireWolf/"  %>
-  <p><%= "initial password for all account:"+"12345678"%></p>
+    <a href="https://github.ncsu.edu/sxu11/DireWolf/">GitHub Link</a>
+  <p><%= "initial password for all account in DireWolf:"+"12345678"%></p>
+  <p><%= "You can log in the real email account at mail.google.com using password \'project1\', so that you can test mail notification functions" %></p>
+  <p><%= "emp1ncsu@gmail.com, std1ncsu@hotmail.com, which respectively is an employer account and a job seeker account"  %></p>
   <h2>Existing JobSeeker Account:</h2>
   <% @users.each do|user| %>
-      <p><%= user.email %></p>
+      <p><%="jobseeker account: " %><%= user.email %></p>
   <% end %>
 
   <h2>Existing Employer Account:</h2>
@@ -16,6 +18,9 @@
 
   <h2>Existing Admin Account:</h2>
   <% @admins.each do|admin| %>
-      <p><%= admin.email %></p>
+      <p><%="admin account: " %><%= admin.email %></p>
   <% end %>
+  <%= "Once an application has been made,an email will be sent to the employer indicating that a jobseeker has applied for the job (s)he posted "%>
+  <br>
+  <%= "Once an application status has been changed,an email will be sent to the jobseeker indicating that the application status has been changed "%>
 </div>

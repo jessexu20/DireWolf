@@ -5,5 +5,7 @@ class JobNotifierPreview < ActionMailer::Preview
   def received
     JobNotifier.received
   end
-
+  def stupdated
+    JobNotifier.stupdated
+  end
 end

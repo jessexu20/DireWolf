@@ -1,4 +1,5 @@
 <div style="color:white;border-bottom: 3px solid white; "><h1>Recommendated Job for you</h1>
+  <% if @rejjobs!=nil %>
 <% @recjobs.each do |job| %>
     <div class="entry">
       <div style="float:left;height:20px;color: white; font-family: sans-serif;padding-top:5px;align:center;">
@@ -19,5 +20,7 @@
       </div>
     </div>
 <% end %>
-
 </div>
+  <% else %>
+      <h2>No Jobs available for you,either out of date or applied</h2></div>
+  <% end %>
