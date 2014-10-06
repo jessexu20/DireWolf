@@ -4,9 +4,7 @@ class JobpoolController < ApplicationController
     @jobs=Job.order(:created_at)
   end
   def search
-    @search = Job.search do
-      fulltext params[:search]
-    end
-    @jobs=@search.results
+    @user=current_user
+    @jobs = Job.search_jobs(params)
   end
 end
