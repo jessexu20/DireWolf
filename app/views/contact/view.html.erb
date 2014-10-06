@@ -1,11 +1,13 @@
 <div style="color:white; "><h1>Contact</h1>
   Author: Shiqian Xu, Miaohua Liu, Qiyu Zhou
   <div style="color:white; "><h2>GitHub</h2> </div>
-  <%="https://github.ncsu.edu/sxu11/DireWolf/"  %>
-  <p><%= "initial password for all account:"+"12345678"%></p>
+    <a href="https://github.ncsu.edu/sxu11/DireWolf/">GitHub Link</a>
+  <p><%= "initial password for all fake account:"+"12345678"%></p>
+  <p><%= "password for real email address is \'project1\', so that you can test mail notification functions" %></p>
+  <p><%= "emp1ncsu@gmail.com, std1ncsu@hotmail.com, which respectively is an employer account and a job seeker account"  %></p>
   <h2>Existing JobSeeker Account:</h2>
   <% @users.each do|user| %>
-      <p><%= user.email %></p>
+      <p><%="jobseeker account: " %><%= user.email %></p>
   <% end %>
 
   <h2>Existing Employer Account:</h2>
@@ -16,6 +18,6 @@
 
   <h2>Existing Admin Account:</h2>
   <% @admins.each do|admin| %>
-      <p><%= admin.email %></p>
+      <p><%="admin account: " %><%= admin.email %></p>
   <% end %>
 </div>
