@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="601914e1-f51a-43d5-805e-7d06be3fdaea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/jobapplications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/jobapplications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/recommendation_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/recommendation_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contact/view.html.erb" afterPath="$PROJECT_DIR$/app/views/contact/view.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recommendation/view.html.erb" afterPath="$PROJECT_DIR$/app/views/recommendation/view.html.erb" />
-    </list>
+    <list default="true" id="601914e1-f51a-43d5-805e-7d06be3fdaea" name="Default" comment="" />
     <ignored path="DireWolf.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
