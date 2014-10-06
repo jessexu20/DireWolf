@@ -4,13 +4,12 @@
 <% end %>
 
 <div style="color:white;border-bottom: 3px solid white; "><h1>Job Listing</h1>
-
   <%= form_tag(jobpool_search_path, :method => "get") do %>
-      <%= label_tag(:searchText, "Search:") %>&nbsp;<%= text_field_tag(:searchText) %>&nbsp;<%= submit_tag("Search") %>
+      <%= label_tag(:searchText, "Search:") %>&nbsp;<%= text_field_tag(:searchText)  %>&nbsp;<%= submit_tag("Search") %>
   <% end %>
 <br>
 </div>
-
+<h3><%="Search Results for "+ "\"#{@text}\""  %></h3>
 <% @jobs.each do |job| %>
     <div class="entry">
       <div style="float:left;height:20px;color: white; font-family: sans-serif;padding-top:5px;align:center;">
