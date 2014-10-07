@@ -1,4 +1,4 @@
-Feature: JOnSeeker
+Feature: JobSeeker
 
   Scenario: Log in
     Given: I'm on the jobseeker log in page
