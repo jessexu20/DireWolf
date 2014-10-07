@@ -43,8 +43,7 @@ gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in developm
 gem 'tzinfo-data',platform: [:mingw, :mswin]
 group :test do
   gem 'cucumber-rails'
+
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
-  gem 'rspec'
-  gem 'spork'
 end
