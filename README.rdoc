@@ -17,6 +17,15 @@ a JobSeeker can view related Jobs based on what Jobs they have applied to in the
 
 each controller and model have at least one test covering it
 
+Extre-point parts we've implemented:
+
+Cucumber testing
+
+Emails would be sent to the applier after submitting applications
+
+Emails would be sent to 
+
+
 the link should be 152.46.18.73:3000
 
 
