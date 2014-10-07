@@ -9,23 +9,23 @@ application up and running.
 
 2. A super admin: admin@admin.com cannot be modified
 
-Other admin accounts can be created/deleted/edited by admins
+   Other admin accounts can be created/deleted/edited by admins
 
-All admins could create and edit employers
+   All admins could create and edit employers
 
 
 3. Jobs and Applications will be deleted upon delete of the Employer (say, disappear)
 
-An Employer can see the JobApplications on the Job(s) that they have created, as well as update the status of them
+    An Employer can see the JobApplications on the Job(s) that they have created, as well as update the status of them
 
-An employer can create/edit/delete more than one job, add tags to them
+    An employer can create/edit/delete more than one job, add tags to them
 
 
 4. A JobSeeker can view related Jobs/Recommendations based on what Jobs they have applied to in the past
 
-A jobseeker can apply more than one job, they can withdraw the application as well
+    A jobseeker can apply more than one job, they can withdraw the application as well
 
-JobSeekers cannot apply to the same Job more than once, cannot apply for a Job till they log in
+    JobSeekers cannot apply to the same Job more than once, cannot apply for a Job till they log in
 
 
 5. Each controller and model have at least one test covering it
