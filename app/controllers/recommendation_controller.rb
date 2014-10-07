@@ -9,13 +9,12 @@ class RecommendationController < ApplicationController
       @categories.append(@job.field)
     end
     @categories.each do |category|
-      @reccjob=Job.find_by_field(category)
-      if @reccjob!=@job and @reccjob.outdated==FALSE
-        @recjobs.append(@reccjob)
+      @reccjobs=Job.find_by_sql ["SELECT * FROM jobs WHERE field='#{category}'"]
+      @reccjobs.each do |filterjob|
+        if filterjob!=@job and filterjob.outdated==FALSE
+        @recjobs.append(filterjob)
+        end
       end
     end
-      # job=@jobapplications.job
-    # @category=job.category
-    # @category=@job.category
   end
 end

@@ -1,12 +1,11 @@
 class JobpoolController < ApplicationController
   def index
     @user=current_user
-    @jobs=Job.order(:name)
+    @jobs=Job.order(:created_at)
   end
   def search
-    @search = Job.search do
-      fulltext params[:search]
-    end
-    @jobs=@search.results
+    @user=current_user
+    @text=params[:searchText]
+    @jobs = Job.search_jobs(params)
   end
 end

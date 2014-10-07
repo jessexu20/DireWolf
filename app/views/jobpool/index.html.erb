@@ -4,18 +4,17 @@
 <% end %>
 
 <div style="color:white;border-bottom: 3px solid white; "><h1>Job Listing</h1>
-  <%= form_tag 'jobpool/search', :method => :get do %>
-      <p>
-        <%= text_field_tag :search, params[:search] %>
-        <%= submit_tag "Search", :name => nil %>
-      </p>
+  <%= form_tag("jobpool/search", :method => "get") do %>
+      <%= label_tag(:searchText, "Search:") %>&nbsp;<%= text_field_tag(:searchText) %>&nbsp;<%= submit_tag("Search") %>
   <% end %>
+  <br>
 </div>
+
 
 <% @jobs.each do |job| %>
     <div class="entry">
       <div style="float:left;height:20px;color: white; font-family: sans-serif;padding-top:5px;align:center;">
-        <h3><%="Job Name: "+ job.name %></h3>
+        <h3><%="Job Title: "+ job.name %></h3>
       </div>
       <div style="float:left;height:20px;padding-top:15px;padding-left:5px;align:center;">
         <% if user_signed_in? %>
@@ -28,6 +27,8 @@
             <% else  %>
                 <div style="padding-top:5px; padding-left:10px; font: bold 120% sans-serif; color:black;"<p> Applied</p></div>
             <% end %>
+        <% elsif !employer_signed_in? and !admin_signed_in? %>
+            <%= button_to 'Apply',new_jobapplication_path(:job_id=>job) %>
         <% end %>
       </div>
       <br>
