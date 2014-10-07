@@ -44,9 +44,8 @@ Extre-point parts we've implemented:
 the link should be 152.46.18.73:3000
 
 
-UserName:
-
 Admin:
+
 admin@admin.com
 PW:12345678
 
