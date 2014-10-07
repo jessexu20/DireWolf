@@ -9,9 +9,6 @@ class JobTest < ActiveSupport::TestCase
      assert job.errors[:content].any?
      assert job.errors[:field].any?
      assert job.errors[:tag].any?
-  #   assert job.errors[:tag_id].any?
-     assert job.errors[:employer].any?
      assert job.errors[:deadline].any?
-  #   assert job.errors[:employer_id].any?
    end
 end
