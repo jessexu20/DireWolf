@@ -2,80 +2,78 @@
 
 This README would normally document whatever steps are necessary to get the application up and running.
 
-Search function can be performed without logging in, based on the title, description, field, Employer, and by Tags
-
-A super admin: admin@admin.com cannot be modified
+The Website link for DireWolf is 152.46.18.73:3000
 
 
-1. Search function can be performed without logging in, based on the title, description, field,  Employer, and by Tags
+1. Search function can be performed without logging in, based on the title, description, field,  Employer and by Tags
 
-An Employer can see the JobApplications on the Job(s) that they have created, as well as update the status of them
+2. Accounts can be deleted and modified by the Account holder
+   (If you want to delete Employer, you have to log into that employer account and delete it!)
+    
+3. A super admin: admin@admin.com cannot be modified
 
-An employer can create/edit/delete more than one job, add tags to them
+   Admin accounts can create employers and admin accounts
+  
+   Admin can create new/update/delete categories.
 
-A JobSeeker can view related Jobs/Recommendations based on what Jobs they have applied to in the past
-
-A jobseeker can apply more than one job, they can withdraw the application as well
-
-JobSeekers cannot apply to the same Job more than once, cannot apply for a Job till they log in
-
-Each controller and model have at least one test covering it
-
-Extre-point parts we've implemented:
-
-Cucumber testing
-=======
-2. A super admin: admin@admin.com cannot be modified
-
-   Other admin accounts can be created/deleted/edited by admins
-
-   All admins could create and edit employers
-
-
-3. Jobs and Applications will be deleted upon delete of the Employer (say, disappear)
-
-   An Employer can see the JobApplications on the Job(s) that they have created, as well as update the status of them
+4. Employer account can only be created by admin accounts
 
    An employer can create/edit/delete more than one job, add tags to them
+   (they can only modify the jobs they created,not others)
+   
+   An Employer can see the JobApplications on the Job(s) that they have created
+   
+   An Employer can update the status of the job applications on the job they posted
+  
+5. Job seekers can sign up using their emails.
+    
+   A job seeker can view related Jobs/Recommendations based on what jobs (s)he have applied to in the past
 
+   A job seeker can apply more than one jobs, (s)he can withdraw the application as well
 
-4. A JobSeeker can view related Jobs/Recommendations based on what Jobs they have applied to in the past
+   A job seeker can not apply to the same job more than once, cannot apply for a job till logged in
+   
+   A job seeker can not apply for the job which has been out of date, however they can see that.
 
-   A jobseeker can apply more than one job, they can withdraw the application as well
+6. Jobs  will be deleted upon delete of the Employer.
+    
+   Applications will be deleted if related Employer or Job seeker acccount has been deleted.
 
-   JobSeekers cannot apply to the same Job more than once, cannot apply for a Job till they log in
+7. Each controller and model have at least one test covering it
 
+=======
+Extra-point parts we've implemented:
 
-5. Each controller and model have at least one test covering it
+    1. Cucumber testing
 
+    2. Emails would be sent to the job seeker after the application status has been changed
 
-Extre-point parts we've implemented:
+    3. Emails would be sent to the employer after getting an application of one the jobs he posted
 
-1. Cucumber testing
+Accounts for the Website:
 
-2. Emails would be sent to the job seeker after submitting applications or status changing
+    Admin:
 
-3. Emails would be sent to the employer after getting an application of one the jobs he posted
+    admin@admin.com Password:12345678
 
-
-
-the link should be 152.46.18.73:3000
-
-
-Admin:
-
-admin@admin.com PW:12345678
-
-adm1ncsu@hotmail.com PW:project1
+    admin2@admin.com Password:12345678
 
 Employer:
 
-abc@yahoo.com PW:12345678
+    abc@yahoo.com Password:12345678
 
-emp1ncsu@gmail.com PW:project1
+    emp1ncsu@gmail.com Password:12345678
 
-emp2ncsu@hotmail.com PW:project1
+    emp2ncsu@hotmail.com Password:12345678
 
 Job Seeker:
 
-std1ncsu@hotmail.com PW:project1
+    std1ncsu@hotmail.com Password:12345678
+
+Accounts for the email:(log in at the www.hotmail.com/mail.google.com)
+
+    std1ncsu@hotmail.com Password:project1
+
+    emp1ncsu@gmail.com Password:project1
+
+    emp2ncsu@hotmail.com Password:project1
