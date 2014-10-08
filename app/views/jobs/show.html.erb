@@ -32,7 +32,22 @@
   <%= @job.deadline %>
 </p>
 </div>
+  <style>
+      /* unvisited link */
+      a:link {
+          color: bisque;
+      }
 
+      /* visited link */
+      a:visited {
+          color: silver;
+      }
+
+      /* mouse over link */
+      a:hover {
+          color: #FF00FF;
+      }
+  </style>
 <div style="color:white; font: bold 150% sans-serif;"><%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', jobs_path %></div>
     </div>

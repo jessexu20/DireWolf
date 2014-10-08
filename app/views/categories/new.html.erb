@@ -1,6 +1,19 @@
-<div style="color:white";><h1>New Job Category</h1>
+<div style="color:white"><h1>New Job Category</h1>
 
 <%= render 'form' %>
-
+<style>
+    /* unvisited link */
+    a:link {
+        color: bisque;
+    }
+    /* visited link */
+    a:visited {
+        color: silver;
+    }
+    /* mouse over link */
+    a:hover {
+        color: #FF00FF;
+    }
+</style>
 <%= link_to 'Back', categories_path %>
 </div>

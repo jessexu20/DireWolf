@@ -14,7 +14,22 @@
     <th colspan="3"></th>
   </tr>
   </thead>
+  <style>
+      /* unvisited link */
+      a:link {
+          color: bisque;
+      }
 
+      /* visited link */
+      a:visited {
+          color: silver;
+      }
+
+      /* mouse over link */
+      a:hover {
+          color: #FF00FF;
+      }
+  </style>
 
   <tbody>
   <% @jobapplications.each do |jobapplication| %>

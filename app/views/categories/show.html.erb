@@ -4,7 +4,22 @@
   <strong>Category name:</strong>
   <%= @category.category_name %>
 </p>
+<style>
+    /* unvisited link */
+    a:link {
+        color: bisque;
+    }
 
+    /* visited link */
+    a:visited {
+        color: silver;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #FF00FF;
+    }
+</style>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
