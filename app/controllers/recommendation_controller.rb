@@ -12,9 +12,10 @@ class RecommendationController < ApplicationController
       @reccjobs=Job.find_by_sql ["SELECT * FROM jobs WHERE field='#{category}'"]
       @reccjobs.each do |filterjob|
         if filterjob!=@job and filterjob.outdated==FALSE
-        @recjobs.append(filterjob)
+          @recjobs.append(filterjob)
         end
       end
     end
+    return @recjobs
   end
 end
