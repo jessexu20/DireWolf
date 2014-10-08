@@ -1,22 +1,6 @@
 <div style="color:white; "><h1>Account</h1>
   <div style="color:white; "><h2>If you want to delete account, you have to login that account</h2> </div>
 <p>Existing JobSeeker Account:</p>
-  <style>
-      /* unvisited link */
-      a:link {
-          color: bisque;
-      }
-
-      /* visited link */
-      a:visited {
-          color: silver;
-      }
-
-      /* mouse over link */
-      a:hover {
-          color: #FF00FF;
-      }
-  </style>
 <% @users.each do|user| %>
     <p><%= user.email %></p>
 <% end %>

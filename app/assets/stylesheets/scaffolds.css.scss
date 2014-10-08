@@ -19,12 +19,12 @@ pre {
 }
 
 a {
-  color: #000;
+  color: bisque;
   &:visited {
-    color: #666;
+    color: rosybrown;
   }
   &:hover {
-    color: #fff;
+    color: darkseagreen;
     background-color: #000;
   }
 }
@@ -47,6 +47,7 @@ div {
 
 #error_explanation {
   width: 450px;
+  color: #000000;
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
