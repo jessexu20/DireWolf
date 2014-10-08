@@ -10,27 +10,27 @@
       </ul>
     </div>
   <% end %>
-
+  <p>(the asteroid indicate the necessary blankets For this form)</p>
   <div class="field">
-    <%= f.label :name %>    <br>
+    <%="*" %><%= f.label :name %>    <br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :content %><br>
+    <%="*" %><%= f.label :content %><br>
     <%= f.text_area :content ,rows:8%>
   </div>
   <div class="field">
     <% category_array = Category.all.map { |category| [category.category_name] } %>
-    <%= f.label :field %><br>
+    <%="*" %><%= f.label :field %><br>
     <%= f.select :field,category_array,
                  :prompt=>'Select a Category' %>
   </div>
   <div class="field">
-    <%= f.label :tag %><br>
+    <%="*" %><%= f.label :tag %><br>
     <%= f.text_field :tag %>
   </div>
   <div class="field">
-    <%= f.label :deadline %><br>
+    <%="*" %><%= f.label :deadline %><br>
     <%= f.date_select :deadline %>
   </div>
 

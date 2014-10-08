@@ -4,8 +4,10 @@ This README would normally document whatever steps are necessary to get the appl
 
 The Website link for DireWolf is 152.46.18.73:3000
 
+Feel free to contact jesse.xu.20@gmail.com if you have any questions.
 
-1. Search function can be performed without logging in, based on the title, description, field,  Employer and by Tags
+
+1. Search can be performed without logging in, search is on the all the fields including (title, description, field,  Employer ,Tags)
 
 2. Accounts can be deleted and modified by the Account holder
    (If you want to delete Employer, you have to log into that employer account and delete it!)
@@ -52,7 +54,7 @@ Extra-point parts we've implemented:
 
 Accounts for the Website:
 
-    Admin:
+Admin:
 
     admin@admin.com Password:12345678
 
@@ -70,7 +72,7 @@ Job Seeker:
 
     std1ncsu@hotmail.com Password:12345678
 
-Accounts for the email:(log in at the www.hotmail.com/mail.google.com)
+Accounts for the email:(log in at the www.hotmail.com or mail.google.com )
 
     std1ncsu@hotmail.com Password:project1
 

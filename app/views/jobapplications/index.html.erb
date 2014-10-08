@@ -24,8 +24,8 @@
         <td><%= jobapplication.phone %></td>
         <td><%= jobapplication.coverletter %></td>
         <td><%= jobapplication.status %></td>
-        <td><%= link_to 'Show', jobapplication %></td>
-        <td><%= link_to 'Destroy', jobapplication, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'View the Application',jobapplication%></td>
+        <td><%= link_to 'Withdraw the Application', jobapplication, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
