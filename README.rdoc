@@ -8,6 +8,7 @@ Feel free to contact jesse.xu.20@gmail.com if you have any questions.
 
 
 1. Search can be performed without logging in, search is on the all the fields including (title, description, field,  Employer ,Tags)
+   Search can be performed without case sensitive. eg.(if you search 'a', it will give you results for everything that includes 'a' and 'A'.
 
 2. Accounts can be deleted and modified by the Account holder
    (If you want to delete Employer, you have to log into that employer account and delete it!)
