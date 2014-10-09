@@ -52,6 +52,10 @@ Extra-point parts we've implemented:
     2. Emails would be sent to the job seeker after the application status has been changed
 
     3. Emails would be sent to the employer after getting an application of one the jobs he posted
+    
+    4. Jobs for which the application deadline has passed will not be displayed in recommedation jobs for job seeker.
+    
+    5. Case insensitive search
 
 Accounts for the Website:
 
