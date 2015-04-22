@@ -4,8 +4,8 @@ RSpec.describe Job, type: :model do
   it 'is a valid job' do
     expect(build(:job)).to be_valid
   end
-  it 'is invalid without a employer_id' do
-    expect(build(:job,employer_id:0)).to_not be_valid
+  it 'is invalid without a employer_name' do
+    expect(build(:job,employer_name:nil)).to_not be_valid
   end
   describe '#outdated'
   it 'returns true if time now is larger than deadline' do
