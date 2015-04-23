@@ -118,3 +118,12 @@ Click the Add link next to the Repositories entry in the database section or the
 	Repository type: Git
 	Repository plan: Public
 	Repository name: DireWolf
+
+##### Review Code
+When a developer makes a commit, the commit will show at admin page
+<img src="pics/1.png"/>
+Admin can assign another developer to review it
+<img src="pics/2.png"/>
+Then I log in as the specified reviewer, and I can see the diff
+<img src="pics/overall.png"/>
+
