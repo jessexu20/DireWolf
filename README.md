@@ -1,8 +1,10 @@
 #Special MileStone for DevOps
+
+##Continuous Integration Pipeline
 In the special milestone, we integrate a code review component by using ReviewBoard in the pipeline. The overview is shown as below:
 <img src="pics/overall.png"/>
-##Continuous Integration Pipeline
-The pipeline is composed of XX parts:
+
+The pipeline is composed of 4 parts:
 * A developer makes changes to a develop branch
 * The changes is built and tested in Jenkins
 * If the change passes the test, it will be pushed into the production branch; otherwise, it is declined
@@ -10,9 +12,25 @@ The pipeline is composed of XX parts:
 
 ###Jenkins Configuration
 
+
+#### Code Review 
+We have used the plugin in Jenkins called ReviewBot which will help us to monitor the status of the ReviewBoard, a code review system, which we will illustrated later. The plugins will help us detect if there are some new reviews which needs to be put into the build.
+
+<img src="pics/reviewPlugin.png"/>
+
+
+####Post-build Git Publisher
+Other github hook, we have added a git publisher plugin into the jenkins. Once the build is successful, Jenkins will push the repo into the **production** branch. After that, the Production server would be able to run the newest build release.
+We have also added a tag to track the build, which can be seen in our repo.
+
+<img src= "http://benhallbenhall.dimbal.biz/wp-content/uploads/2013/03/hudson_git_publisher_tags.png"/>
+<img src= "http://benhallbenhall.dimbal.biz/wp-content/uploads/2013/03/bh_hudson_git_publisher_branch.png">
+
+
 ###Rspec & Cucumber
 
 ####Rspec
+
 
 ####Cucumber
 Cucumber is a flagship Behavior Driven Development (BDD) tool. Behavior Driven Development (BDD) is a rising methodology to test and check your code. In BDD, whatever developers write must go into Given-When-Then steps, and thus covers all possible test cases and can be easily modified to accommodate more. 
@@ -62,7 +80,6 @@ We have used the SimpleCov to see the project coverage for our project. To run t
 4. Once you run the Rspec test, it will automatically generate the coverage report.Open Coverage by running.
 		
 		open coverage/index.html
-# Previous content of test helper now starts here
 
 ###Static Analysis Tool
 
@@ -100,7 +117,11 @@ You will get the result like this.
 		app/models/job.rb:3:28: C: Space missing after comma.
 		  has_many :jobapplications,dependent: :destroy
 		
-####
+###Monitor
+
+We have used the Monitoring plugin in Jenkins to monitor our server. The plugins offers lots of details of the system as a whole. You can check it at
+
+	 http://52.6.107.74:8080/monitoring
 
 ###Code Review
 #### ReviewBoard
