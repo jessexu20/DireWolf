@@ -38,10 +38,62 @@ An example step file:
 	end
 
 ####Test Coverage 
-SimpleCov
+We have used the SimpleCov to see the project coverage for our project. To run this ruby gem, you need to do the following.
+1. Add SimpleCov to your Gemfile and bundle install:
+
+		gem 'simplecov', :require => false, :group => :test
+2. Load and launch SimpleCov at the very top of the spec_helper.rb and it will check the coverage of the code. 
+
+		require 'simplecov'
+		SimpleCov.start
+
+3. Add some folders which you want it should be excluded in the test report
+	
+		SimpleCov.start do
+		  add_filter "/features/"
+		end
+		
+4. Once you run the Rspec test, it will automatically generate the coverage report.Open Coverage by running.
+		
+		open coverage/index.html
+# Previous content of test helper now starts here
 
 ###Static Analysis Tool
 
+We have used rubocop for the static analysis for our ruby project. Include the following in the Gemfile.
+
+	gem 'rubocop', require: false
+
+Run the static analysis tool by run
+	
+	rubocop
+	
+You will get the result like this.
+
+		app/models/job.rb:1:1: C: Missing top-level class documentation comment.
+		class Job < ActiveRecord::Base
+		^^^^^
+		app/models/job.rb:2:3: C: Prefer the new style validations validates :column, presence: value over validates_presence_of.
+		  validates_presence_of :name,:content,:field,:employer_name,:deadline,:tag
+		  ^^^^^^^^^^^^^^^^^^^^^
+		app/models/job.rb:2:30: C: Space missing after comma.
+		  validates_presence_of :name,:content,:field,:employer_name,:deadline,:tag
+		                             ^
+		app/models/job.rb:2:39: C: Space missing after comma.
+		  validates_presence_of :name,:content,:field,:employer_name,:deadline,:tag
+		                                      ^
+		app/models/job.rb:2:46: C: Space missing after comma.
+		  validates_presence_of :name,:content,:field,:employer_name,:deadline,:tag
+		                                             ^
+		app/models/job.rb:2:61: C: Space missing after comma.
+		  validates_presence_of :name,:content,:field,:employer_name,:deadline,:tag
+		                                                            ^
+		app/models/job.rb:2:71: C: Space missing after comma.
+		  validates_presence_of :name,:content,:field,:employer_name,:deadline,:tag
+		                                                                      ^
+		app/models/job.rb:3:28: C: Space missing after comma.
+		  has_many :jobapplications,dependent: :destroy
+		
 ####
 
 ###Code Review
