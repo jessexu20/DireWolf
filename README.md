@@ -29,11 +29,35 @@ We have also added a tag to track the build, which can be seen in our repo.
 
 ###Rspec & Cucumber
 
+Behavior Driven Development (BDD) is a rising methodology to test and check your code. In BDD, whatever developers write must go into Given-When-Then steps, and thus covers all possible test cases and can be easily modified to accommodate more. 
+
 ####Rspec
+
+We have used Rspec for our Unit Test. We can simply write test like below. As Test Driven Development and Bahavior Driven Development Tool, we would first see the red fail test and modify the code to make them change to green. We can simply write the natural language test like the following.
+
+		require 'rails_helper'
+
+		RSpec.describe Job, type: :model do
+		  it 'is a valid job' do
+		    expect(build(:job)).to be_valid
+		  end
+		  it 'is invalid without a employer_name' do
+		    expect(build(:job,employer_name:nil)).to_not be_valid
+		  end
+		  describe '#outdated'
+		  it 'returns true if time now is larger than deadline' do
+		    expect(build(:job,deadline:"2014-09-09").outdated).to be true  
+		  end
+  
+		  it 'returns false if time now is smaller than deadline' do
+		    expect(build(:job,deadline:"2015-09-09").outdated).to be false
+		  end
+		end
+		
 
 
 ####Cucumber
-Cucumber is a flagship Behavior Driven Development (BDD) tool. Behavior Driven Development (BDD) is a rising methodology to test and check your code. In BDD, whatever developers write must go into Given-When-Then steps, and thus covers all possible test cases and can be easily modified to accommodate more. 
+Cucumber is a flagship Behavior Driven Development (BDD) tool. 
 
 Executing a Cucumber test scenario requires two files. Feature file contains high level description of the test scenario in simple language. Step definition file contains the actual code to execute the test scenario in the Features file.
 
