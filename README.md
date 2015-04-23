@@ -165,40 +165,40 @@ Click the Add link next to the Repositories entry in the database section or the
 	Repository name: DireWolf
 
 ##### Review Code
-When a developer makes a commit, the commit will show at admin page
+When a developer makes a commit, the commit will show at admin page, as shown in the following screenshot
 
 <img src="pics/1.png"/>
 
-Admin can assign another developer to review it
+Admin can assign another developer to review it, e.g., feifei, as shown in the following screenshot
 
 <img src="pics/2.png"/>
 
-Then I log in as the specified reviewer, and I can see the diff
+Then I log in as "feifei" - the specified reviewer, and I can see the diff, as shown in the following screenshot
 
 <img src="pics/3.png"/>
 
-And I can make comment
+And "feifei" can make comment, e.g., "test test test", as shown in the following screenshot
 
 <img src="pics/review.png"/>
 <img src="pics/comment1.png"/>
 
-The comment will show 
+The comment will show in "admin", as shown in the following screenshot
 
 <img src="pics/comment2.png"/>
 
-You can also download the diff file
+You can also download the diff file, as the tab in the following screenshot shown
 
 <img src="pics/downloaddiff.png"/>
 
-ship it
+You can also ship it, as the tab in the following screenshot shown
 
 <img src="pics/ship.png"/>
 
-update diff
+You can also update diff, as the tab in the following screenshot shown
 
 <img src="pics/updatediff.png"/>
 
-view diff
+You can also view diff, as the tab in the following screenshot shown
 
 <img src="pics/viewdiff.png"/>
 
