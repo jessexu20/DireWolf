@@ -1,4 +1,6 @@
-#Special MileStone for DevOps
+#Special MileStone(Code Review Tool with Reviewboard)
+
+ Shiqian Xu(sxu11), Feifei Wang(fwang12)
 
 ##Continuous Integration Pipeline
 In the special milestone, we integrate a code review component by using ReviewBoard in the pipeline. The overview is shown as below:
