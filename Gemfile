@@ -39,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem'devise'
 gem 'simplecov',:require=>false,:group=>:test
+gem 'simplecov-rcov', :require => false
 gem 'rubocop',require:false
 gem 'sunspot_rails'
 gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
