@@ -6,7 +6,7 @@ class Job < ActiveRecord::Base
 
   scope :by_search ,lambda{|search_text| where(Job.arel_table[:name].matches("%#{search_text}%").or Job.arel_table[:content].matches("%#{search_text}%").or Job.arel_table[:employer_name].matches("%#{search_text}%").or Job.arel_table[:field].matches("%#{search_text}%").or Job.arel_table[:tag].matches("%#{search_text}%") ) }
 
-  def self.search_jobs(params)
+  def search_jobs(params)
     jobs=Job.by_search(params[:searchText])
     jobs = jobs.uniq
     return jobs

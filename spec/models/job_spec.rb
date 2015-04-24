@@ -15,4 +15,9 @@ RSpec.describe Job, type: :model do
   it 'returns false if time now is smaller than deadline' do
     expect(build(:job,deadline:"2015-09-09").outdated).to be false
   end
+  describe '#search_jobs(params)'
+  it 'returns every job when empty' do
+    expect(build(:job).search_jobs({:name => ""})).to_not be_nil
+  end
+  
 end
