@@ -216,3 +216,5 @@ You can also view diff, as the tab in the following screenshot shown
 
 <img src="pics/viewdiff.png"/>
 
+##### Automate the Process
+
