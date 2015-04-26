@@ -12,6 +12,16 @@ The pipeline is composed of 4 parts:
 * If the change passes the test, it will be pushed into the production branch; otherwise, it is declined
 * The changes is also reviewed by code reviewers
 
+Later on we decide to modify our system design to make the code review at the staging phase.
+1. The developer will push the code into the development branch
+2. Jenkins will monitor the development branch and trigger the build and automatic test.
+3. The code which passes the test will be pushed to the review branch. 
+4. Reviewboard is able to monitor the review branch and distribute the code to reviewers for review.
+5. After some time(staging period), the code on the review branch will be pushed to the production branch.
+6. Production server and canary server will be able to get the code from the production branch.
+(7. We are thinking to add another Jenkins server to build the code after code review. However, for our project, we haven't implemented it as it will be unnecessary to do that as code review in our project won't change many code, however in a real project, it may be a good way to implement it)
+<img src= "pics/sys.jpg">
+
 ###Jenkins Configuration
 
 
