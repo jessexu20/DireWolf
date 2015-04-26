@@ -261,5 +261,3 @@ Developers can publish the draft associated with the review request by using the
 
 	ubuntu@ip-172-31-50-57:~/DireWolf$ rbt publish 17
 	Review request #17 is published.
-
-sdf
