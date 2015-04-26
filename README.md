@@ -238,4 +238,28 @@ Then when I commit this repository, I can see the review request
 And I can view the diff file
 <img src="pics/rbt2.png"/>
 
-test
+Developers can view a list of pending review requests associated with the working directories repository
+
+	rbt status
+
+Example output:
+
+	ubuntu@ip-172-31-50-57:~/DireWolf$ rbt status
+	r/22 - :D
+   	r/21 - :(
+   	r/20 - :(
+   	r/19 - :D
+   	r/18 - test2
+ 	* r/12 - Merge branch 'master' of https://github.com/jessexu20/DireWolf
+   	r/11 - add rspec
+   	r/10 - Merge branch 'master' of https://github.com/jessexu20/DireWolf
+   	r/8 - :D
+   	r/2 - config simplecov plugin
+   	r/1 - Test
+
+Developers can publish the draft associated with the review request by using the request id, for example:
+
+	ubuntu@ip-172-31-50-57:~/DireWolf$ rbt publish 17
+	Review request #17 is published.
+
+sdf
