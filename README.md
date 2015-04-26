@@ -239,4 +239,3 @@ And I can view the diff file
 <img src="pics/rbt2.png"/>
 
 
-test
