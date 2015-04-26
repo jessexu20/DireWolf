@@ -222,3 +222,19 @@ RBTools is a set of command line tools for working with Review Board and RBCommo
 
 RBTools interfaces with your repository’s official command line tools, making it easy to generate suitable diffs or to apply changes across any supported type of repository without having to learn different sets of tools.
 
+In this milestone, we add hooks to automatically request for review when a commit is made in the repository.
+
+In the repository
+
+	rbt setup-repo
+
+In .git/hooks
+
+	vim post-commit
+	rbt post --username=admin --password=123456 --submit-as=admin
+
+Then when I commit this repository, I can see the review request
+<img src="pics/rbt1.png"/>
+And I can view the diff file
+<img src="pics/rbt2.png"/>
+
