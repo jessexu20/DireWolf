@@ -218,3 +218,7 @@ You can also view diff, as the tab in the following screenshot shown
 
 ##### Automate the Process
 
+RBTools is a set of command line tools for working with Review Board and RBCommons. It’s there to help quickly get your code up for review, check on the status of changes, and eventually land your code in the codebase, amongst other uses.
+
+RBTools interfaces with your repository’s official command line tools, making it easy to generate suitable diffs or to apply changes across any supported type of repository without having to learn different sets of tools.
+
