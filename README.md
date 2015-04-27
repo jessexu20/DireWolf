@@ -40,6 +40,10 @@ We have also added a tag to track the build, which can be seen in our repo.
 <img src= "http://benhallbenhall.dimbal.biz/wp-content/uploads/2013/03/hudson_git_publisher_tags.png"/>
 <img src= "http://benhallbenhall.dimbal.biz/wp-content/uploads/2013/03/bh_hudson_git_publisher_branch.png">
 
+#### Email Notification
+Once the Jenkins build status changed, a email will be sent to the developer to notify him whether there are some problems in the build process, which needs to be taken care of.
+<img src= "pics/jenkins_email.png"/>
+
 
 ###Rspec & Cucumber
 
@@ -119,6 +123,8 @@ We have used the SimpleCov to see the project coverage for our project. To run t
 		
 		open coverage/index.html
 
+5. We have used the rcov plugin in Jenkins, so that we could easily see the simplecov report in Jenkins build.
+<img src="pics/rcov.png"/>
 ###Static Analysis Tool
 
 We have used rubocop for the static analysis for our ruby project. Include the following in the Gemfile.
@@ -167,7 +173,7 @@ Review Board is a tool for reviewing source code, documentation and other text-b
 
 In this project, we config ReviewBoard to support post-commit review. Post-commit review is where the code is reviewed after going into the codebase. The code is committed to the repository and, at some point later, the code is reviewed. Any fixes that need to be made are then committed again later.
 
-##### Add Repositories
+#### Add Repositories
 
 Click the Add link next to the Repositories entry in the database section or the Administrator Dashboard. Fill in:
 
@@ -178,7 +184,7 @@ Click the Add link next to the Repositories entry in the database section or the
 	Repository plan: Public
 	Repository name: DireWolf
 
-##### Review Code
+#### Review Code
 When a developer makes a commit, the commit will show at admin page, as shown in the following screenshot
 
 <img src="pics/1.png"/>
@@ -216,7 +222,9 @@ You can also view diff, as the tab in the following screenshot shown
 
 <img src="pics/viewdiff.png"/>
 
-##### Automate the Process
+####Automate the Process
+
+#####Initialize a new code review request
 
 RBTools is a set of command line tools for working with Review Board and RBCommons. It’s there to help quickly get your code up for review, check on the status of changes, and eventually land your code in the codebase, amongst other uses.
 
@@ -261,3 +269,17 @@ Developers can publish the draft associated with the review request by using the
 
 	ubuntu@ip-172-31-50-57:~/DireWolf$ rbt publish 17
 	Review request #17 is published.
+
+#####Automatically push to production using rb tools
+We have wrote a script called land.sh which use the **rbt land** to  land a change on a branch, once it has been approved through the review process. It takes care of validating that the change is approved, creates a commit for it on a destination branch, and optionally pushes that branch upstream.
+	
+	git add -A
+	git commit -m "review done"
+	rbt land -p -d -r $1 --local
+	git checkout review
+
+When calling this script, it should be given a parameter, which is the code review request number. That request should be marked as **"Ship it"**, so that it can be pushed to the production branch.
+When you succeed, you would see the follwing:
+<img src="pics/rbt_land.png"/>
+
+
