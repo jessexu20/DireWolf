@@ -1,4 +1,4 @@
 REVIEWBOARD_URL = "52.6.107.74/rev"
 REPOSITORY = "DireWolf"
-BRANCH = "master"
-LAND_DEST_BRANCH = "master"
+BRANCH = "review"
+LAND_DEST_BRANCH = "production"
