@@ -13,14 +13,16 @@ The pipeline is composed of 4 parts:
 * The changes is also reviewed by code reviewers
 
 Later on we decide to modify our system design to make the code review at the staging phase.
+
 1. The developer will push the code into the development branch
 2. Jenkins will monitor the development branch and trigger the build and automatic test.
 3. The code which passes the test will be pushed to the review branch. 
 4. Reviewboard is able to monitor the review branch and distribute the code to reviewers for review.
 5. After some time(staging period), the code on the review branch will be pushed to the production branch.
 6. Production server and canary server will be able to get the code from the production branch.
-(7. We are thinking to add another Jenkins server to build the code after code review. However, for our project, we haven't implemented it as it will be unnecessary to do that as code review in our project won't change many code, however in a real project, it may be a good way to implement it)
-<img src= "pics/sys.jpg">
+7. (*We are thinking to add another Jenkins server to build the code after code review. However, for our project, we haven't implemented it as it will be unnecessary to do that as code review in our project won't change many code, but in a real project, it may be a good way to implement it*)
+
+<img src= "pics/sys.png"/>
 
 ###Jenkins Configuration
 
@@ -214,3 +216,48 @@ You can also view diff, as the tab in the following screenshot shown
 
 <img src="pics/viewdiff.png"/>
 
+##### Automate the Process
+
+RBTools is a set of command line tools for working with Review Board and RBCommons. It’s there to help quickly get your code up for review, check on the status of changes, and eventually land your code in the codebase, amongst other uses.
+
+RBTools interfaces with your repository’s official command line tools, making it easy to generate suitable diffs or to apply changes across any supported type of repository without having to learn different sets of tools.
+
+In this milestone, we add hooks to automatically request for review when a commit is made in the repository.
+
+In the repository
+
+	rbt setup-repo
+
+In .git/hooks
+
+	vim post-commit
+	rbt post --username=admin --password=123456 --submit-as=admin
+
+Then when I commit this repository, I can see the review request
+<img src="pics/rbt1.png"/>
+And I can view the diff file
+<img src="pics/rbt2.png"/>
+
+Developers can view a list of pending review requests associated with the working directories repository
+
+	rbt status
+
+Example output:
+
+	ubuntu@ip-172-31-50-57:~/DireWolf$ rbt status
+	r/22 - :D
+   	r/21 - :(
+   	r/20 - :(
+   	r/19 - :D
+   	r/18 - test2
+ 	* r/12 - Merge branch 'master' of https://github.com/jessexu20/DireWolf
+   	r/11 - add rspec
+   	r/10 - Merge branch 'master' of https://github.com/jessexu20/DireWolf
+   	r/8 - :D
+   	r/2 - config simplecov plugin
+   	r/1 - Test
+
+Developers can publish the draft associated with the review request by using the request id, for example:
+
+	ubuntu@ip-172-31-50-57:~/DireWolf$ rbt publish 17
+	Review request #17 is published.
